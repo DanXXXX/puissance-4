@@ -6,38 +6,42 @@
 // Font size for responsive
 html {
 
-    font-size: $default-font-size;
+    font-size: $font-size-small;
 
     @media (min-width: $breakpoint-medium) {
-        font-size: $medium-font-size;
+        font-size: $font-size-medium;
     }
 
     @media (min-width: $breakpoint-large) {
-        font-size: $large-font-size;
+        font-size: $font-size-large;
     }
     
     @media (min-width: $breakpoint-medium) {
-        font-size: $medium-font-size;
+        font-size: $font-size-medium;
     }
 
     @media (min-width: $breakpoint-large) {
-        font-size: $large-font-size;
+        font-size: $font-size-large;
     }
 }
-
+    /*
+        ATTENTION A BIEN REMPLIR OU COMMENTER CHAQUE LIGNE
+    */
 // General text
 body, a {
 
+    line-height: 1.7;
+    font-weight: 400;
     font-family: $font-family-label;
-    color: $text-color;
-    font-size: $default-font-size;
+    color: $color-text;
+    font-size: $font-size-small;
 
     @media (min-width: $breakpoint-medium) {
-        font-size: $medium-font-size;
+        font-size: $font-size-medium;
     }
 
     @media (min-width: $breakpoint-large) {
-        font-size: $large-font-size;
+        font-size: $font-size-large;
     }
 }
 

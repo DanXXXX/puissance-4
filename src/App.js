@@ -1,4 +1,5 @@
 import React from 'react';
+import Case from './components/Case';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './styles/main.scss';
 
@@ -10,7 +11,54 @@ class App extends React.Component {
   render() { 
     return (  
       <>
-        <h1>  hello</h1>
+        <h1>hellojjj</h1>
+        <div className="containers">
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+            <Case />
+
+        </div>
+
+
       </>
     );
   }

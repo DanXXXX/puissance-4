@@ -1,0 +1,9 @@
+.containers {
+    background-color: $bg-color-primary;
+    height: 50rem;
+    width: 50rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
