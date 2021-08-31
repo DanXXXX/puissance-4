@@ -8,54 +8,30 @@ class App extends React.Component {
     super(props);
     this.state = {  }
   }
+  renderGrill = () => {
+   let grille = []
+    for (let casier = 1; casier <= 42; casier++) {
+      
+       grille.push(<Case />)
+    }
+        return grille
+  }
+ 
   render() { 
+   
+
+   
+
     return (  
       <>
-        <h1>hellojjj</h1>
+        <h1>Puissance 4</h1>
         <div className="containers">
-            <Case />
-            <Case />
-            <Case />
-            <Case />
-            <Case />
-            <Case />
-            <Case />
-            <Case />
-            <Case />
-            <Case />
-            <Case />
-            <Case />
-            <Case />
-            <Case />
-            <Case />
-            <Case />
-            <Case />
-            <Case />
-            <Case />
-            <Case />
-            <Case />
-            <Case />
-            <Case />
-            <Case />
-            <Case />
-            <Case />
-            <Case />
-            <Case />
-            <Case />
-            <Case />
-            <Case />
-            <Case />
-            <Case />
-            <Case />
-            <Case />
-            <Case />
-            <Case />
-            <Case />
-            <Case />
-            <Case />
-            <Case />
-            <Case />
 
+          
+
+            {this.renderGrill()}
+            
+        
         </div>
 
 
