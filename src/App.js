@@ -8,13 +8,21 @@ class Acceuil extends React.Component {
     super(props);
     this.state = {
       handleStartGame: false,
+      player: 1,
+      index: 0,
+      toFill: [],
     };
     console.log(this.state.board);
   }
   onStartGame = () => {
     this.setState({ handleStartGame: true });
   };
-
+  handleInput(e) {
+    const toFill = this.state.toFill;
+    toFill.push(+e.target.id);
+    console.log(toFill);
+    // this.setState({ toFill: push(e.target.id + 7 * 5) });
+  }
   render() {
     return (
       <>
@@ -22,7 +30,12 @@ class Acceuil extends React.Component {
         <button className="button" type="button" onClick={this.onStartGame}>
           Démarrer le jeu
         </button>
-        {this.state.handleStartGame && <Grille />}
+        {this.state.handleStartGame && (
+          <Grille
+            toFill={this.state.toFill}
+            onClick={this.handleInput.bind(this)}
+          />
+        )}
       </>
     );
   }
