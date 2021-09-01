@@ -15,6 +15,7 @@ class Acceuil extends React.Component {
   render() {
     return (
       <>
+      
 
         <h1>Puissance 4</h1>
         <button className="button" type="button" onClick={this.handleStartGame}>Démarrer le jeu</button>
@@ -28,3 +29,4 @@ class Acceuil extends React.Component {
 }
 
 export default Acceuil;
+
