@@ -6,7 +6,11 @@ import './styles/main.scss';
 class Acceuil extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { handleStartGame: false }
+    this.state = { 
+
+      handleStartGame: false 
+      
+      }
 
   }
   handleStartGame = () => {
@@ -19,7 +23,7 @@ class Acceuil extends React.Component {
         <h1>Puissance 4</h1>
         <button className="button" type="button" onClick={this.handleStartGame}>Démarrer le jeu</button>
         {this.state.handleStartGame &&
-        <Grille />
+          <Grille />
         }
 
       </>
