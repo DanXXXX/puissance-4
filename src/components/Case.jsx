@@ -1,14 +1,22 @@
-import React from 'react';
+import React from "react";
 
 class Case extends React.Component {
-    state = {  }
-    render() { 
-        return ( 
-            <div className="case">
-                
-            </div>
-         );
-    }
+  render() {
+    return (
+      <div
+        style={
+          {
+            //   backgroundColor: `${
+            //     this.props.toFill.some(+this.props.id) ? "red" : "white"
+            //   }`,
+          }
+        }
+        className="case"
+        id={this.props.id}
+        onClick={this.props.onClick}
+      ></div>
+    );
+  }
 }
- 
+
 export default Case;
