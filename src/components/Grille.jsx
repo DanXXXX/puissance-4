@@ -1,5 +1,5 @@
 import React from "react";
-import Case from "./Case";
+import Colonnes from "./Colonnes";
 
 class Grille extends React.Component {
   constructor(props) {
@@ -7,11 +7,11 @@ class Grille extends React.Component {
   }
   renderGrill = () => {
     let grille = [];
-    for (let casier = 1; casier <= 42; casier++) {
+    for (let colonne = 1; colonne <= 7; colonne++) {
       grille.push(
-        <Case
+        <Colonnes
           toFill={this.props.toFill}
-          id={casier}
+          id={colonne}
           onClick={this.props.onClick}
         />
       );
@@ -20,7 +20,8 @@ class Grille extends React.Component {
   };
 
   render() {
-    return <div className="containers">{this.renderGrill()}</div>;
+    return <div className="containers">
+    {this.renderGrill()}</div>;
   }
 }
 
