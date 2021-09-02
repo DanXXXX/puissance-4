@@ -6,9 +6,7 @@ class Case extends React.Component {
       <div
         style={
           {
-            //   backgroundColor: `${
-            //     this.props.toFill.some(+this.props.id) ? "red" : "white"
-            //   }`,
+            
           }
         }
         className="case"

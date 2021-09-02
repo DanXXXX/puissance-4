@@ -14,6 +14,7 @@ class Acceuil extends React.Component {
     };
     console.log(this.state.board);
   }
+
   onStartGame = () => {
     this.setState({ handleStartGame: true });
   };
