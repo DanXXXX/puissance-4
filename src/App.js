@@ -18,7 +18,7 @@ class Acceuil extends React.Component {
   render() {
     return (
       <>
-        <h1>Puissance 4</h1>
+        <h2>Puissance 4</h2>
         {this.state.handleStartGame ? (
           <Grille />
         ) : (
