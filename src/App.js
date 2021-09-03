@@ -18,7 +18,7 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <h2>Puissance 4</h2>
+        <h1>Puissance 4</h1>
         {this.state.handleStartGame ? (
           <Grille />
         ) : (
