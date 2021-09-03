@@ -3,11 +3,15 @@ import Grille from "./components/Grille";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/main.scss";
 
-class Acceuil extends React.Component {
+class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       handleStartGame: false,
+      player: 1,
+      index: 0,
+      toFill: [],
+      
     };
   }
 
@@ -31,4 +35,4 @@ class Acceuil extends React.Component {
   }
 }
 
-export default Acceuil;
+export default App;
