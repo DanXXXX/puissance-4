@@ -8,10 +8,6 @@ class App extends React.Component {
     super(props);
     this.state = {
       handleStartGame: false,
-      player: 1,
-      index: 0,
-      toFill: [],
-      
     };
   }
 
